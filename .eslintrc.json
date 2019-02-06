@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "import"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "indent": ["error", 4],
+    "func-names":"off",
+    "no-plusplus" :"off",
+    "no-unused-vars": "warn",
+    "prefer-destructuring": ["error", {
+      "VariableDeclarator": {
+        "array": false,
+        "object": false
+      },
+      "AssignmentExpression": {
+        "array": false,
+        "object": false
+      }
+    }, {
+      "enforceForRenamedProperties": false
+    }]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nyc mocha tests/*.js app/**/**.spec.js --timeout 180000",
+    "testReport": "nyc report --reporter=html tests/*.js",
+    "lint": "node ./node_modules/eslint/bin/eslint index.js app/**/**.js",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint index.js app/**/**.js --fix"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "mysql": "^2.15.0",
+    "winston": "^3.0.0-rc1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.1",
+    "request": "^2.83.0"
+  },
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.5.1"
+  }
+}
